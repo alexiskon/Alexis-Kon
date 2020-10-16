@@ -1,0 +1,19 @@
+{
+  "name": "simpleWeatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weatherapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "heroku": "^7.46.0",
+    "nodemon": "^2.0.5",
+    "request": "^2.88.2",
+    "require": "^2.4.20"
+  }
+}
