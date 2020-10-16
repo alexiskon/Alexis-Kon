@@ -2,7 +2,7 @@ const { response } = require('express')
 const request = require('request')
 
 const mapboxLocation = (address, callback) => {
-    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address) +'.json?access_token=pk.eyJ1IjoiYWxrb24tIiwiYSI6ImNrZzljZGo4bzBqNmMycW15anZhN2Z2bWQifQ.F4jZkNqzY6xf8PA-NW10fA&limit=3'
+    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address) +'.json?access_token=&limit=3'
 
     request({url, json: true}, (error, response) => {
         if (error) {
