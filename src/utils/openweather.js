@@ -1,7 +1,7 @@
 const request = require('request')
 
 const openweather = (cityName, callback) => {
-    const url = "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&units=metric&appid=a00c6c50508a7540bae2dd44c44501d9"
+    const url = "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&units=metric&appid="
     request({url, json: true}, (error, response) => {
         if (error) {
             callback ('Something went wrong, maybe check your internet connetion?')
